@@ -1,0 +1,7 @@
+{ "meterials":
+    [
+    {"meterialNo": "6510515600","description":"Optilix", "quantity":"1", "meterialCode":"A", "extras":"Invoice to Client" },
+    {"meterialNo": "2810515631","description":"Microswitch 1U 6A 250VAC AG A", "quantity":"3", "meterialCode":"A", "extras":"Invoice to Client" },
+    {"meterialNo": "3410515699","description":"Spring lever 191 913 913 WITH ROLL A", "quantity":"1", "meterialCode":"V", "extras":"whereabouts client diagnostic" }
+    ]
+}

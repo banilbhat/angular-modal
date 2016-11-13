@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="Modal">
+<head>
+   <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal DashBoard </title>
+    <link rel=stylesheet href="css/main.css">
+    <script src="js/static/angular.1.3.1.min.js" ></script>
+    <script src="js/static/angular-animate1.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/Controller/ModalController.js"></script>
+    <script src = "js/Controller/ModalService.js"></script>
+    <script src="js/directive.js"></script>
+    <script src="js/Controller/signature_pad.js"></script>
+    <script src="js/Controller/JsonService.js"></script>
+</head>
+    <body ng-controller="AppController">
+       <button ng-click="openModal()" class="mainButton"  >
+        Click To Open Modal
+        </button>
+           <!-- BEGIN: Modals Layout.-->
+        <div
+            bn-modals
+            ng-show="subview"
+           ng-switch="subview"
+            class="m-modals">
+        </div>
+    </body>
+</html>

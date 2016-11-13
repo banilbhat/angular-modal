@@ -1,0 +1,18 @@
+{
+    "summary" : "Summary",
+    "label1" : "Trip:",
+    "label2" : "Work:",
+    "label3" : "Trip:",
+    "label4" : "System recovery:",
+    "label5" : "Distance:",
+    "contactname" : "Contact name",
+    "contactavailable" : "Contact person not available",
+    "signature" : "Signature",
+    "meterialNo" : "MeterialNo",
+    "description" : "Description",
+    "quantity" : "Quantity",
+    "meterialcode" : "Meterial Code",
+    "clear" : "Clear",
+    "sendLater" :"Send Later",
+    "confirm" :"Submit confirmation report"
+}

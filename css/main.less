@@ -1,0 +1,299 @@
+@color1:#DBDEE3;
+@color2:#125E7F;
+@color4:#EBF0F4;
+@padding: 20px 20px 20px 20px;
+@paddingtop:20px;
+@paddingbottom:20px;
+@normalfontweight:500;
+@fontweight2: 600;
+
+@normalfontcolor :dimgrey;  
+body{
+   font-family:sans-serif;
+   font-weight: @normalfontweight;
+    font-size: 16px;
+   color:@normalfontcolor;
+}
+.bgcolor{
+    background-color: @color4;
+}
+.marginbottom{
+    margin-bottom: 10px;
+}
+.correctheight{
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+
+.floatRight {
+   float:right; 
+}
+.middlealign{
+    vertical-align:middle;
+}
+.close{
+    float:right;
+    color:@color2;
+    padding-top: 2px;
+}
+ .hover:hover{
+    border: 1px solid @color2;
+}
+.summarycell, .summaryLabel{
+    padding-left: 5px;
+    width:60px;
+    display:inline-block;
+}
+.summaryLabel{
+    width:150px;
+    font-weight: @fontweight2;
+}
+.meterialcell{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: @normalfontweight;
+}
+.mainButton{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left:50%;
+}
+.error {
+    border:1px solid red;
+    color:red;
+}
+.header,.footer{
+    background-color: @color4;
+    padding:@padding;
+}
+.header{
+    padding-bottom: 0px;
+}
+.footer{
+    height:30px;
+}
+.signature{
+    padding:@padding;
+}
+ 
+.row{
+    overflow: hidden;
+    width:100%;
+}
+#signaturelabel{
+    vertical-align: top;
+}
+.cell{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+label{
+    font-weight:500;
+    display: inline-block;
+}
+.group-3 label{
+    width: 140px;
+}
+.group-4 label{
+    vertical-align: super;
+}
+button {
+   background-color: @color2;
+   color: #ffffff;
+   padding: 5px;
+}
+table{
+    //overflow: auto;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+thead ,th {
+   background-color: @color1;
+   nowrap:true; 
+}
+thead th{
+    nowrap:true;
+    
+}
+
+button.leftmost{
+   background-color: #D37C21;  
+  
+}
+canvas,input{
+    width:300px;
+    background-color: @color4;    
+}
+canvas{
+    height:150px;
+    border: 1px solid #125E7F;    
+}
+.noborder{
+    border: 0px solid;
+}
+
+input[type=checkbox]{
+    border: 0px solid;
+    width:30px;
+    height:30px;
+    background-color: @color4;
+}
+
+input[type=text]{
+    height:30px;
+    color: @normalfontcolor;
+}
+tablecell{
+    display: table;
+}
+.modaltable{
+    width:100%;
+    overflow-x: auto;
+}
+.group-2 {
+   float:left;
+   width:50%;
+   //background-color: @color4;
+   padding-bottom: 100%;
+   margin-bottom: -100%;
+}
+.group-3{
+    float:left;
+    width: 45%; 
+    margin-bottom: 2px;
+    
+}
+.group-4{
+    float:left;
+    width: 45%;     
+}
+  #clear {
+  float:left;
+  
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+ .group-2{
+        width:100%;
+    }
+    .group-3{
+        width: 100%; 
+    }
+    .group-4{
+        width: 100%; 
+    }
+    #clear {
+        float:right;
+  
+    }
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .group-2{
+        width:100%;
+    }
+    .group-3{
+        width: 100%; 
+    }
+    .group-4{
+        width: 100%; 
+    }
+    #clear {
+        float:right;
+  
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 780px) {
+    .group-2{
+        width:100%;
+    }
+    .group-3{
+        width: 100%; 
+    }
+    .group-4{
+        width: 100%; 
+    }
+    #clear {
+        float:right;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+     .group-2{
+        width:50%;
+    }
+    .group-3{
+        width: 45%; 
+    }
+    .group-4{
+        width: 45%; 
+    }
+     #clear {
+        float:left;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .group-2{
+        width:50%;
+    }
+    .group-3{
+        width: 45%; 
+    }
+    .group-4{
+        width: 45%; 
+    }
+    #clear {
+         float:left;
+  
+    }
+}
+
+div.m-modals {
+  background-color:rgba(155,166,172,0.8);
+  bottom:0px;
+  left:0px;
+  position:fixed;
+  right:0px;
+  top:0px;
+    overflow-y: auto;
+  > .modal {
+    background-color:#ffffff;
+    border-radius:3px 3px 3px 3px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    //padding:20px 20px 20px 20px;
+    position:relative;
+    margin: 0px 20px;
+    top:50px;
+    overflow:auto;
+  }
+}
+div.m-modals.ng-hide {
+  background-color:rgba(155,166,172,0);
+  > .modal.ng-enter {
+    top:-200px;
+    transition:250ms ease top;
+  }
+  > .modal.ng-enter.ng-enter-active {
+    top:200px;
+  }
+}
+div.m-modals.ng-hide-add.ng-hide-add-active, div.m-modals.ng-hide-remove.ng-hide-remove-active {
+  transition:250ms ease all;
+}
+ul {
+   list-style-type: none;
+    padding-left: 2px;
+    line-height:200%;
+}
+
+

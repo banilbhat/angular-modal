@@ -1,0 +1,76 @@
+  <!-- BEGIN: Modal. -->
+        <form ng-switch-when="modal" ng-controller="ModalController"
+            class="modal">
+            <div class="header">
+                <div class="row" >
+                <div class="group-2">{{labels.summary}}</div>
+                <div class="close" ng-click="cancel()"><span class="hover">X</span></div>
+                </div>
+                <div class="row">
+                <div class="group-2">
+                <ul>
+                    <li><span class="summaryLabel">{{labels.label1}}</span> <span ng-repeat="item in summary.label1" ><span class="summarycell" >{{item}}</span></span> </li>
+                    <li><span class="summaryLabel">{{labels.label2}}</span><span ng-repeat="item in summary.label2" ><span  class="summarycell">{{item}}</span></span></li>
+                    <li><span class="summaryLabel">{{labels.label3}}</span><span ng-repeat="item in summary.label3" ><span  class="summarycell">{{item}}</span></span></li>
+                </ul>
+                </div>
+                <div class= "group-2 correctheight bgcolor">
+                <ul>
+                    <li><span class="summaryLabel">{{labels.label4}}</span><span  class="summarycell" >{{summary.label4}}</span></li>
+                    <li><span class="summaryLabel">{{labels.label5}}</span><span  class="summarycell">{{summary.label5}}</span></li>
+                    </ul>
+                </div>           
+                </div>
+            </div>
+            <div class="modaltable">    
+           <table  cellspacing="0" celladding="0" >
+                <thead>
+                    <tr>
+                    <th align=left  class="meterialcell">{{labels.meterialNo}}</th>
+                    <th align=left  class="meterialcell"> {{labels.description}}</th>
+                    <th align=left  class="meterialcell">{{labels.quantity}}</th>
+                    <th align=left class="meterialcell" >{{labels.meterialcode}}</th>
+                    <th>&nbsp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="meterial in meterials">
+                        <td class="cell">{{meterial.meterialNo}}</td>
+                        <td class="cell">{{meterial.description}}</td>
+                        <td class="cell">{{meterial.quantity}}</td>
+                        <td class="cell">{{meterial.meterialCode}}</td>
+                        <td class="cell">{{meterial.extras}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+          <div class="signature">
+              <div class="row marginbottom" >
+            <div class="group-3">
+                <label for="contactName"  >{{labels.contactname}}:</label>  
+                <input id="contactName" type="text" class="noborder" ng-model="sign.contactName" />
+                
+            </div>
+              <div class="group-4">
+                      <input type="checkbox" id="ContactChk" ng-model="sign.contactAvailable" /> <label for="chkContact">{{labels.contactavailable}}</label>
+              </div>
+              </div>
+              <div class= "row marginbottom tablecell">
+            <div  class="group-3" >
+                <label id="signaturelabel" for="signatureCanvas" >{{labels.signature}}:</label>
+                <canvas id="signatureCanvas"  ></canvas>  
+              
+            </div> 
+            <div  class="group-4">
+                  <button id="clear"  ng-click="clear($event)">{{labels.clear}}</button>  
+            </div>
+            </div>
+            </div>
+            <div class="footer">
+            <div class="floatRight">
+                <button class="middlealign" ng-click="cancel()">{{labels.sendLater}}</button>
+                <button class="middlealign leftmost " ng-click="submit()">{{labels.confirm }}</button>
+            </div>
+            </div>
+        </form>
+<!-- END:  Modal. --> 
